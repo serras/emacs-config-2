@@ -62,3 +62,4 @@
 (require 'company)
 ;(autoload 'company-mode "company" nil t)
 (add-hook 'after-init-hook 'global-company-mode)
+(setq company-show-numbers t)
