@@ -9,6 +9,10 @@
        (concat (file-name-directory (or load-file-name
                                     (buffer-file-name)))
                "packages/ghc-mod/elisp"))
+(add-to-list 'load-path
+       (concat (file-name-directory (or load-file-name
+                                    (buffer-file-name)))
+               "packages/company-ghc"))
 
 ; Set up environment
 (setenv "PATH" (concat "/opt/ghc/7.8.3/bin:" (getenv "PATH")))
@@ -60,3 +64,7 @@
 (autoload 'ghc-init "ghc" nil t)
 (autoload 'ghc-debug "ghc" nil t)
 (add-hook 'haskell-mode-hook (lambda () (ghc-init)))
+
+; Completion from company-mode
+(require 'company-ghc)
+(add-to-list 'company-backends 'company-ghc)

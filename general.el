@@ -21,7 +21,9 @@
 (defvar packages
   '(undo-tree
     color-theme-solarized
-    rainbow-delimiters))
+    rainbow-delimiters
+    cl-lib
+    company-mode))
 (loop for name in packages
   do (add-to-list 'load-path
        (concat (file-name-directory (or load-file-name
@@ -55,3 +57,8 @@
 (defalias 'redo 'undo-tree-redo)
 (global-set-key (kbd "C-z") 'undo)
 (global-set-key (kbd "C-S-z") 'redo)
+
+; Autocompletion
+(require 'company)
+;(autoload 'company-mode "company" nil t)
+(add-hook 'after-init-hook 'global-company-mode)

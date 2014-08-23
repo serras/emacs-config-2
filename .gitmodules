@@ -25,3 +25,12 @@
 [submodule "packages/ghc-mod"]
 	path = packages/ghc-mod
 	url = https://github.com/kazu-yamamoto/ghc-mod.git
+[submodule "packages/company-mode"]
+	path = packages/company-mode
+	url = https://github.com/company-mode/company-mode
+[submodule "packages/company-ghc"]
+	path = packages/company-ghc
+	url = https://github.com/iquiw/company-ghc
+[submodule "packages/cl-lib"]
+	path = packages/cl-lib
+	url = https://github.com/emacsmirror/cl-lib
