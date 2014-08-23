@@ -8,6 +8,6 @@
 (add-to-list 'load-path
        (concat (file-name-directory (or load-file-name
                                     (buffer-file-name)))
-               "packages/magit-modes"))
+               "packages/git-modes"))
 
 (require 'magit)

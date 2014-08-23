@@ -17,6 +17,9 @@
 (add-to-list 'exec-path "~/.cabal/bin")
 (add-to-list 'exec-path "/opt/cabal/1.20/bin")
 
+; Load mode
+(load "haskell-mode-autoloads.el")
+
 ; Choose indentation mode
 ;; Only haskell-mode
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)

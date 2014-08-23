@@ -30,6 +30,10 @@
                (symbol-name name))))
 
 ; Color theme
+(add-to-list 'custom-theme-load-path 
+   (concat (file-name-directory (or load-file-name
+                                        (buffer-file-name)))
+               "packages/color-theme-solarized"))
 (load-theme 'solarized-light t)
 
 ; Color matching brackets
@@ -43,6 +47,7 @@
 (cua-mode 1) ;; Windows shortcuts
 (tool-bar-mode -1) ;; Hide toolbar
 ;(define-key global-map (kbd "RET") 'newline-and-indent) ;; Indent on return
+(delete-selection-mode 1) ;; Delete regions normally
 
 ; Better undo support
 (require 'undo-tree)

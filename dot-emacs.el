@@ -1,3 +1,4 @@
+(require 'cl)
 ; Loop through all the files
 (defvar files
   '(general
@@ -10,5 +11,5 @@
   do (load
        (concat (file-name-directory (or load-file-name
                                         (buffer-file-name)))
-               "packages/"
-               (symbol-name name)) t t))
+               (symbol-name name)
+               ".el") t t))
