@@ -34,3 +34,6 @@
 [submodule "packages/cl-lib"]
 	path = packages/cl-lib
 	url = https://github.com/emacsmirror/cl-lib
+[submodule "packages/markdown-mode"]
+	path = packages/markdown-mode
+	url = https://github.com/defunkt/markdown-mode

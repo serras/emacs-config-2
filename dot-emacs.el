@@ -6,7 +6,8 @@
     haskell
     idris
     latex
-    git))
+    git
+    markdown))
 (loop for name in files
   do (load
        (concat (file-name-directory (or load-file-name
