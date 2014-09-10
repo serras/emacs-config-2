@@ -37,3 +37,6 @@
 [submodule "packages/markdown-mode"]
 	path = packages/markdown-mode
 	url = https://github.com/defunkt/markdown-mode
+[submodule "packages/web-mode"]
+	path = packages/web-mode
+	url = git@github.com:fxbois/web-mode.git
