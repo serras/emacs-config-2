@@ -40,3 +40,6 @@
 [submodule "packages/hi2"]
 	path = packages/hi2
 	url = https://github.com/errge/hi2
+[submodule "packages/web-mode"]
+	path = packages/web-mode
+	url = git@github.com:fxbois/web-mode.git

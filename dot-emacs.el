@@ -7,7 +7,8 @@
     idris
     latex
     git
-    markdown))
+    markdown
+    web))
 (loop for name in files
   do (load
        (concat (file-name-directory (or load-file-name
