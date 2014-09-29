@@ -37,3 +37,6 @@
 [submodule "packages/markdown-mode"]
 	path = packages/markdown-mode
 	url = https://github.com/defunkt/markdown-mode
+[submodule "packages/hi2"]
+	path = packages/hi2
+	url = https://github.com/errge/hi2
