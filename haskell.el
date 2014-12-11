@@ -5,10 +5,10 @@
        (concat (file-name-directory (or load-file-name
                                     (buffer-file-name)))
                "packages/haskell-mode"))
-;(add-to-list 'load-path
-;       (concat (file-name-directory (or load-file-name
-;                                    (buffer-file-name)))
-;               "packages/ghc-mod/elisp"))
+(add-to-list 'load-path
+       (concat (file-name-directory (or load-file-name
+                                    (buffer-file-name)))
+               "packages/ghc-mod/elisp"))
 (add-to-list 'load-path
        (concat (file-name-directory (or load-file-name
                                     (buffer-file-name)))
